@@ -1,14 +1,18 @@
 /// Roles
 enum Role {
   /// Administrator
-  admin, 
+  admin,
+
   /// President
   president,
+
   /// Secretary
   secretary,
+
   /// Default
-  normal, 
+  normal,
 }
+
 /// Class Neighbor
 class Neighbor {
   /// Constructor
@@ -19,14 +23,19 @@ class Neighbor {
     this.door,
     this.roles = const [Role.normal],
   }) : assert(id == null || id.isNotEmpty, 'id cannot be empty');
+
   /// Id
   final String? id;
+
   /// Person
   final String name;
+
   /// Floor
-  final int? floor; //Plantaç
+  final int? floor;
+
   /// Door
-  final int? door; //Puerta
+  final int? door;
+
   /// Roles
   final List<Role> roles;
 }

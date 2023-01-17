@@ -5,18 +5,28 @@ class Neighborhood {
   /// Constructor
   Neighborhood({
     this.id,
-    this.name = '',
     this.code,
+    this.name = '',
+    this.direction,
+    this.number,
     this.neighbors = const [],
   }) : assert(id == null || id.isNotEmpty, 'id cannot be empty');
 
   /// Id
   final String? id;
-  /// Name
-  final String name;
+
   /// Code
   final String? code;
+
+  /// Name
+  final String name;
+
+  /// Direction
+  final String? direction;
+
+  /// Number direction
+  final int? number;
+
   /// List all neighbors
   final List<Neighbor> neighbors;
-
 }
