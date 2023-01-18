@@ -1,6 +1,4 @@
-import 'package:api_neighborhood/models/neighbor.dart';
-
-/// Main class
+/// Neighborhood
 class Neighborhood {
   /// Constructor
   Neighborhood({
@@ -9,7 +7,6 @@ class Neighborhood {
     this.name = '',
     this.direction,
     this.number,
-    this.neighbors = const [],
   }) : assert(id == null || id.isNotEmpty, 'id cannot be empty');
 
   /// Id
@@ -26,7 +23,4 @@ class Neighborhood {
 
   /// Number direction
   final int? number;
-
-  /// List all neighbors
-  final List<Neighbor> neighbors;
 }

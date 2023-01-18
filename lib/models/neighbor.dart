@@ -19,9 +19,7 @@ class Neighbor {
   Neighbor({
     this.id,
     this.name = '',
-    this.floor,
-    this.door,
-    this.roles = const [Role.normal],
+    this.roles = Role.normal,
   }) : assert(id == null || id.isNotEmpty, 'id cannot be empty');
 
   /// Id
@@ -30,12 +28,6 @@ class Neighbor {
   /// Person
   final String name;
 
-  /// Floor
-  final int? floor;
-
-  /// Door
-  final int? door;
-
   /// Roles
-  final List<Role> roles;
+  final Role roles;
 }
