@@ -1,4 +1,4 @@
-import 'neighbor.dart';
+import 'package:api_neighborhood/models/neighbor.dart';
 
 /// Dwelling
 class Dwelling {
