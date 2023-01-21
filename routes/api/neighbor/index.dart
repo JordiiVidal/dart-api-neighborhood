@@ -4,7 +4,7 @@ import 'package:dart_frog/dart_frog.dart';
 Response onRequest(RequestContext context) {
   switch (context.request.method) {
     case HttpMethod.get:
-      return Response();
+      return Response(body: 'list neighbors');
     case HttpMethod.post:
     case HttpMethod.delete:
     case HttpMethod.head:
