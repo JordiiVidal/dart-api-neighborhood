@@ -1,14 +1,16 @@
 import 'dart:io';
 import 'package:dart_frog/dart_frog.dart';
 
-Response onRequest(RequestContext context, String id) {
+Response onRequest(
+  RequestContext context,
+  String neighborhoodId,
+  String dwellingId,
+) {
   switch (context.request.method) {
     case HttpMethod.get:
-      return Response(body: 'GET - dwelling $id');
+      return Response(body: 'GET - List neighbor');
     case HttpMethod.post:
-      return Response(body: 'POST - dwelling update $id');
     case HttpMethod.delete:
-      return Response(body: 'DELTE - dwelling $id');
     case HttpMethod.head:
     case HttpMethod.options:
     case HttpMethod.patch:

@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:dart_frog/dart_frog.dart';
 
-Response onRequest(RequestContext context) {
+Response onRequest(RequestContext context, String neighborhoodId) {
   switch (context.request.method) {
     case HttpMethod.get:
-      return Response(body: 'list dwellings');
+      return Response(body: 'GET - List dwelling');
     case HttpMethod.post:
     case HttpMethod.delete:
     case HttpMethod.head:
